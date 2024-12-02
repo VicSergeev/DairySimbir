@@ -1,0 +1,11 @@
+disabled_rules: # Отключить правила
+  - line_length
+  - trailing_whitespace
+
+opt_in_rules: # Включить дополнительные правила
+  - empty_count
+  - redundant_nil_coalescing
+
+line_length: 120 # Максимальная длина строки
+excluded: # Исключить файлы или директории
+  - Pods

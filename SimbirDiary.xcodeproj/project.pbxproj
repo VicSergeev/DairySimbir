@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		1C8F79BB2CFE0A6700B73BCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8F79BA2CFE0A6700B73BCB /* AppDelegate.swift */; };
 		1C8F79BD2CFE0A6700B73BCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8F79BC2CFE0A6700B73BCB /* SceneDelegate.swift */; };
-		1C8F79BF2CFE0A6700B73BCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8F79BE2CFE0A6700B73BCB /* ViewController.swift */; };
+		1C8F79BF2CFE0A6700B73BCB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8F79BE2CFE0A6700B73BCB /* MainViewController.swift */; };
 		1C8F79C22CFE0A6700B73BCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C8F79C02CFE0A6700B73BCB /* Main.storyboard */; };
 		1C8F79C42CFE0A6800B73BCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C8F79C32CFE0A6800B73BCB /* Assets.xcassets */; };
 		1C8F79C72CFE0A6800B73BCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C8F79C52CFE0A6800B73BCB /* LaunchScreen.storyboard */; };
+		1C8F79D62CFE123A00B73BCB /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 1C8F79D52CFE123A00B73BCB /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C8F79B72CFE0A6700B73BCB /* SimbirDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimbirDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C8F79BA2CFE0A6700B73BCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C8F79BC2CFE0A6700B73BCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1C8F79BE2CFE0A6700B73BCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1C8F79BE2CFE0A6700B73BCB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1C8F79C12CFE0A6700B73BCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C8F79C32CFE0A6800B73BCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C8F79C62CFE0A6800B73BCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C8F79C82CFE0A6800B73BCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C8F79D52CFE123A00B73BCB /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		1C8F79B92CFE0A6700B73BCB /* SimbirDiary */ = {
 			isa = PBXGroup;
 			children = (
-				1C8F79BA2CFE0A6700B73BCB /* AppDelegate.swift */,
-				1C8F79BC2CFE0A6700B73BCB /* SceneDelegate.swift */,
-				1C8F79BE2CFE0A6700B73BCB /* ViewController.swift */,
+				1C8F79D12CFE0BAA00B73BCB /* App */,
+				1C8F79BE2CFE0A6700B73BCB /* MainViewController.swift */,
 				1C8F79C02CFE0A6700B73BCB /* Main.storyboard */,
 				1C8F79C32CFE0A6800B73BCB /* Assets.xcassets */,
 				1C8F79C52CFE0A6800B73BCB /* LaunchScreen.storyboard */,
-				1C8F79C82CFE0A6800B73BCB /* Info.plist */,
+				1C8F79D52CFE123A00B73BCB /* .swiftlint.yml */,
 			);
 			path = SimbirDiary;
+			sourceTree = "<group>";
+		};
+		1C8F79D12CFE0BAA00B73BCB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1C8F79BA2CFE0A6700B73BCB /* AppDelegate.swift */,
+				1C8F79BC2CFE0A6700B73BCB /* SceneDelegate.swift */,
+				1C8F79C82CFE0A6800B73BCB /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +88,7 @@
 				1C8F79B32CFE0A6700B73BCB /* Sources */,
 				1C8F79B42CFE0A6700B73BCB /* Frameworks */,
 				1C8F79B52CFE0A6700B73BCB /* Resources */,
+				1C8F79D42CFE11F400B73BCB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -124,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C8F79D62CFE123A00B73BCB /* .swiftlint.yml in Resources */,
 				1C8F79C72CFE0A6800B73BCB /* LaunchScreen.storyboard in Resources */,
 				1C8F79C42CFE0A6800B73BCB /* Assets.xcassets in Resources */,
 				1C8F79C22CFE0A6700B73BCB /* Main.storyboard in Resources */,
@@ -132,12 +145,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C8F79D42CFE11F400B73BCB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1C8F79B32CFE0A6700B73BCB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C8F79BF2CFE0A6700B73BCB /* ViewController.swift in Sources */,
+				1C8F79BF2CFE0A6700B73BCB /* MainViewController.swift in Sources */,
 				1C8F79BB2CFE0A6700B73BCB /* AppDelegate.swift in Sources */,
 				1C8F79BD2CFE0A6700B73BCB /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +321,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MF7QC2JX3N;
-				INFOPLIST_FILE = SimbirDiary/Info.plist;
+				INFOPLIST_FILE = SimbirDiary/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +330,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftvibes.SimbirDiary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +341,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MF7QC2JX3N;
-				INFOPLIST_FILE = SimbirDiary/Info.plist;
+				INFOPLIST_FILE = SimbirDiary/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftvibes.SimbirDiary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
